@@ -1,0 +1,22 @@
+name: astrbot_plugin_turn_eraser
+display_name: 最近一轮对话删除
+short_desc: /del 删除最近一轮对话，且该指令本身不进入聊天记录
+desc: |
+  提供 /del 指令，删除当前会话最近一轮对话：被删内容不会再发送给 LLM，
+  这条指令本身也不会写入聊天上下文。可选 /undel 恢复上一次删除的内容
+  （仅保存在内存中，重启后失效）。
+version: 1.0.0
+author: 玉米妙妙屋
+repo: https://github.com/bugusun/astrbot-del-message
+astrbot_version: ">=4.0.0"
+social_link: https://github.com/bugusun
+tags:
+  - qq
+  - 聊天记录
+  - 对话管理
+  - 删除
+support_platforms:
+  - aiocqhttp
+  - qq_official
+  - telegram
+  - webchat

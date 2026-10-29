@@ -1,0 +1,27 @@
+{
+  "admin_only": {
+    "description": "仅允许管理员使用该指令",
+    "type": "bool",
+    "default": false
+  },
+  "whole_turn": {
+    "description": "整轮删除（连同用户提问一起删掉）。关闭时只删最后一轮里的用户消息及其之后内容",
+    "type": "bool",
+    "default": true
+  },
+  "allow_undo": {
+    "description": "允许用 /undel 恢复上一次被删除的内容（仅保存在内存中，重启后失效）",
+    "type": "bool",
+    "default": true
+  },
+  "show_preview": {
+    "description": "删除后在回执里显示被删对话的开头片段",
+    "type": "bool",
+    "default": true
+  },
+  "preview_length": {
+    "description": "回执预览的最大字数",
+    "type": "int",
+    "default": 40
+  }
+}
